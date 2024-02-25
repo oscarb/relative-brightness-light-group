@@ -25,7 +25,7 @@ Once added, search for "Relative brightness light group" in HACS to find and dow
 3. Restart Home Assistant
 
 
-## Usage
+## Configuration
 
 Using this is as easy as using a normal [light group](https://www.home-assistant.io/integrations/group/). 
 
