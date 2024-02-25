@@ -3,5 +3,6 @@
     "name": "Relative Brightness Light Group",
     "integration_type": "entity",
     "codeowners": ["@oscarb"],
+    "documentation": "https://github.com/oscarb/relative-brightness-light-group", 
     "version": "1.0.0"
   }
