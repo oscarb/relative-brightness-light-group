@@ -6,7 +6,6 @@ Light group for Home Assistant that maintains relative brightness between lights
 > Note: Since this light group is built on top of the core light group, it also has that "bouncy" brightness slider [behavior](https://community.home-assistant.io/t/light-groups-bouncy-brightness-slider-behaviour/501539) depending on your setup. 
 
 ## Installation 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=oscarb&repository=relative-brightness-light-group)
 
 ### HACS
 
