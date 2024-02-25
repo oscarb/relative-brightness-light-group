@@ -21,7 +21,7 @@ Once added, search for "Relative brightness light group" in HACS to find and dow
 ### Manual
 
 1. Download this repository
-2. opy over the `custom_components` folder into your Home Assistant `conifg` folder
+2. Copy over the `custom_components` folder into your Home Assistant `conifg` folder
 3. Restart Home Assistant
 
 
