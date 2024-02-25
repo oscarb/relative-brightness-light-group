@@ -10,7 +10,7 @@ Light group for Home Assistant that maintains relative brightness between lights
 
 ### HACS
 
-Because this custom integration is overriding a core integration, it needs to be added as a [custom repository](https://hacs.xyz/docs/faq/custom_repositories).
+To install using HACS, add a [custom repository](https://hacs.xyz/docs/faq/custom_repositories) to HACS.
 
 **Repository:**  `https://github.com/oscarb/relative-brightness-light-group`
 
