@@ -2,7 +2,8 @@
     "domain": "relative_brightness_light_group",
     "name": "Relative Brightness Light Group",
     "integration_type": "entity",
+    "iot_class": "calculated", 
     "codeowners": ["@oscarb"],
-    "documentation": "https://github.com/oscarb/relative-brightness-light-group", 
+    "documentation": "https://github.com/oscarb/relative-brightness-light-group",
     "version": "1.0.0"
   }
