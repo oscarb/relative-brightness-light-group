@@ -16,6 +16,8 @@ Because this custom integration is overriding a core integration, it needs to be
 
 **Category:**  Integration
 
+Once added, search for "Relative brightness light group" in HACS to find and download the component. 
+
 ### Manual
 
 1. Download this repository
