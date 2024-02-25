@@ -1,7 +1,8 @@
-"""Platform to enable smart relative dimming of light groups, extending the core light group."""
+"""Platform to enable smart relative dimming of light groups, extending core light group."""
 
 from __future__ import annotations
 
+import logging
 from typing import Any
 
 from homeassistant.components import light
@@ -34,6 +35,8 @@ DOMAIN = "relative_brightness_light_group"
 
 # Validation of the user's configuration
 PLATFORM_SCHEMA = LIGHT_GROUP_PLATFORM_SCHEMA
+
+_LOGGER = logging.getLogger(__name__)
 
 
 async def async_setup_platform(
@@ -128,6 +131,9 @@ class RelativeBrightnessLightGroup(LightGroup):
             for brightness, entity_ids in brightness_groups.items():
                 data[ATTR_BRIGHTNESS] = brightness
                 data[ATTR_ENTITY_ID] = entity_ids
+
+                _LOGGER.debug("Forwarded turn_on command: %s", data)
+
                 await self.hass.services.async_call(
                     light.DOMAIN,
                     SERVICE_TURN_ON,
@@ -137,6 +143,9 @@ class RelativeBrightnessLightGroup(LightGroup):
                 )
         else:
             # No lights on or other adjustments than brightness
+
+            _LOGGER.debug("Forwarded turn_on command: %s", data)
+
             await self.hass.services.async_call(
                 light.DOMAIN,
                 SERVICE_TURN_ON,
