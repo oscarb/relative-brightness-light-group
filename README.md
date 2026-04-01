@@ -1,4 +1,7 @@
 # Relative brightness light group
+
+> **Note:** This repo is not actively maintained, have a look at [Cheerpipe/relative-light-group](https://github.com/Cheerpipe/relative-light-group) for something more up-to-date
+
 Light group for Home Assistant that maintains relative brightness between lights as group brightness is changed.
 
 ![](demo.gif)
