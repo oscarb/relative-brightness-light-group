@@ -6,5 +6,5 @@
     "integration_type": "entity",
     "iot_class": "calculated", 
     "issue_tracker": "https://github.com/oscarb/relative-brightness-light-group/issues",
-    "version": "1.0.0"
+    "version": "1.0.1"
   }

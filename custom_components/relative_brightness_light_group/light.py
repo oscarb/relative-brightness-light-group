@@ -144,6 +144,13 @@ class RelativeBrightnessLightGroup(LightGroup):
         else:
             # No lights on or other adjustments than brightness
 
+            entity_ids = [state.entity_id for state in lights_on]
+            #Check if there are currently lights turned on
+            #We need this, otherwise lights could never be turned on
+            if entity_ids:
+                #Change the target of the command only to the lights that are currently on
+                data[ATTR_ENTITY_ID] = entity_ids
+
             _LOGGER.debug("Forwarded turn_on command: %s", data)
 
             await self.hass.services.async_call(
@@ -153,3 +160,4 @@ class RelativeBrightnessLightGroup(LightGroup):
                 blocking=True,
                 context=self._context,
             )
+
